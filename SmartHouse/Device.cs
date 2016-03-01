@@ -5,10 +5,18 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public abstract class Device
+    public abstract class Device : IStatusOnOff
     {
         public string Name { get; set; }
         public bool State { get; set; }
-        abstract public string Information();
+        //abstract public string ToString();
+        public void StatusOn()
+        {
+            State = true;
+        }
+        public void StatusOff()
+        {
+            State = false;
+        }
     }
 }

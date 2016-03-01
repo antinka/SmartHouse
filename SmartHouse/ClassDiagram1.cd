@@ -10,7 +10,7 @@
   <Class Name="SmartHouse.TV">
     <Position X="11.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EQIBEAAAAAAAICABAAAAAQAAAgAAAAAAAAIAAAICAAA=</HashCode>
+      <HashCode>EQABAAAAAAAAICAFAAAAAQAAAgAAAAAAAAIAAAACAAA=</HashCode>
       <FileName>TV.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -18,7 +18,7 @@
   <Class Name="SmartHouse.Lamp">
     <Position X="11.75" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAkAQAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAIAAAg=</HashCode>
+      <HashCode>AAAAgAQAAAAAAAAEAAAAIAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Lamp.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -26,14 +26,15 @@
   <Class Name="SmartHouse.Device">
     <Position X="9.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAABAIAAAA=</HashCode>
       <FileName>Device.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="SmartHouse.Conditioner">
-    <Position X="8.75" Y="9.25" Width="1.5" />
+    <Position X="9.75" Y="9.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAEAAAAAAAAASAAAAAAAAAAAAAAAAAAAQAQAIkAAA=</HashCode>
+      <HashCode>AAAAIAAAAAAAAASEAAQAAAAAAAAAAAAAAAQAQAAkAAA=</HashCode>
       <FileName>Conditioner.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -41,15 +42,15 @@
   <Class Name="SmartHouse.Fridge">
     <Position X="15" Y="9.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAACAAAIACAAAAAAAAAAAAAAAACAAQAAAAEAAA=</HashCode>
+      <HashCode>AAAAIAAACAAAIAAEAAQAAAAAAAAAAAACAAQAAAAEAAA=</HashCode>
       <FileName>Fridge.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="SmartHouse.Jalousie">
-    <Position X="17.5" Y="5.5" Width="1.5" />
+    <Position X="16.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAACAACAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAACAACAAAEAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Jalousie.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -80,6 +81,20 @@
     <TypeIdentifier>
       <HashCode>AAAAAAQAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Interface\IBrightness.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartHouse.IVolume">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IVolume.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartHouse.IChangeChanel">
+    <Position X="13.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IChangeChanel.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="SmartHouse.BrightnessLevel">

@@ -112,7 +112,7 @@ namespace SmartHouse
         public Fridge(string name): base(name)
         {
             Name = name;
-            State = false;
+           // State = false;
         }
         public override void TemperaturePlus()
         {
@@ -148,7 +148,7 @@ namespace SmartHouse
         {
             doorState = false;
         }
-        public override string Information()
+        public override string ToString()
         {
             string mode;
             string state;

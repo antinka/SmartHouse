@@ -23,7 +23,7 @@ namespace SmartHouse
                 Console.WriteLine("Меня зовут Джарвис,я управляю системой умного дома\nВ вашем доме находится:\n ");
                 foreach (var i in ComponentList)
                 {
-                    Console.WriteLine(i.Value.Information());
+                    Console.WriteLine(i.Value.ToString());
                 }
                 Console.WriteLine();
                 Console.Write("Введите команду: ");
@@ -188,9 +188,9 @@ namespace SmartHouse
                             }
                             break;
                         case "nextchannel":
-                            if (ComponentList[commands[0]] is TV)
+                            if (ComponentList[commands[0]] is IChangeChanel)
                             {
-                                ((TV)ComponentList[commands[0]]).NextChannel();
+                                ((IChangeChanel)ComponentList[commands[0]]).NextChannel();
                             }
                             else
                             {
@@ -199,9 +199,9 @@ namespace SmartHouse
                             }
                             break;
                         case "prevchannel":
-                            if (ComponentList[commands[0]] is TV)
+                            if (ComponentList[commands[0]] is IChangeChanel)
                             {
-                                ((TV)ComponentList[commands[0]]).PrevChannel();
+                                ((IChangeChanel)ComponentList[commands[0]]).PrevChannel();
                             }
                             else
                             {
@@ -210,9 +210,9 @@ namespace SmartHouse
                             }
                             break;
                         case "volume-":
-                            if (ComponentList[commands[0]] is TV)
+                            if (ComponentList[commands[0]] is IVolume)
                             {
-                                ((TV)ComponentList[commands[0]]).VolumeMinus();
+                                ((IVolume)ComponentList[commands[0]]).VolumeMinus();
                             }
                             else
                             {
@@ -222,9 +222,9 @@ namespace SmartHouse
                             break;
 
                         case "volume+":
-                            if (ComponentList[commands[0]] is TV)
+                            if (ComponentList[commands[0]] is IVolume)
                             {
-                                ((TV)ComponentList[commands[0]]).VolumePlus();
+                                ((IVolume)ComponentList[commands[0]]).VolumePlus();
                             }
                             else
                             {

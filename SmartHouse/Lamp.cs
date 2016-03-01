@@ -5,22 +5,22 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public class Lamp : Device, IStatusOnOff, IBrightness
+    public class Lamp : Device,  IBrightness
     {
         public BrightnessLevel brightness;
         public Lamp(string name)
         {
             Name = name;
-            State = false;
+          //  State = false;
         }
-        public void StatusOn()
+      /*  public void StatusOn()
         {
             State = true;
         }
         public void StatusOff()
         {
             State = false;
-        }
+        }*/
         public void SetLow()
         {
             brightness = BrightnessLevel.Low;
@@ -33,7 +33,7 @@ namespace SmartHouse
         {
             brightness = BrightnessLevel.High;
         }
-        public override string Information()
+        public override string ToString()
         {
             string state;
             string mode = "";

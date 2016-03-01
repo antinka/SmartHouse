@@ -13,7 +13,7 @@ namespace SmartHouse
             : base(name)
         {
             Name = name;
-            State = false;
+          //  State = false;
         }
         public void StatusOpen()
         {
@@ -23,7 +23,7 @@ namespace SmartHouse
         {
             jalousieState = false;
         }
-        public override string Information()
+        public override string ToString()
         {
             string state;
             string mode;

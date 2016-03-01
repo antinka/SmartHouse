@@ -5,14 +5,14 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public class Conditioner : Device, ITemperature, IStatusOnOff
+    public class Conditioner : Device, ITemperature
     {
         public ModeOfSustemWork mode;
         private int temperature;
         public Conditioner(string name)
         {
             Name = name;
-            State = false;
+          //  State = false;
             temperature = 0;
         }
         public virtual void TemperaturePlus()
@@ -29,14 +29,14 @@ namespace SmartHouse
                 temperature -= 1;
             }
         }
-        public void StatusOn()
+        /*public void StatusOn()
         {
             State = true;
         }
         public void StatusOff()
         {
             State = false;
-        }
+        }*/
         public virtual int Temperature
         {
             get
@@ -61,7 +61,7 @@ namespace SmartHouse
         {
             mode = ModeOfSustemWork.FrostSafe;
         }
-        public override string Information()
+        public override string ToString()
         {
             string mode;
             string state;

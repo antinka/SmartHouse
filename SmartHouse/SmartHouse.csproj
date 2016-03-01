@@ -45,10 +45,12 @@
     <Compile Include="Conditioner.cs" />
     <Compile Include="Device.cs" />
     <Compile Include="Fridge.cs" />
+    <Compile Include="Interface\IChangeChanel.cs" />
     <Compile Include="Interface\IBrightness.cs" />
     <Compile Include="Interface\IDegree.cs" />
     <Compile Include="Interface\IStatusOnOff.cs" />
     <Compile Include="Interface\IStatusOpenClose.cs" />
+    <Compile Include="Interface\IVolume.cs" />
     <Compile Include="Jalousie.cs" />
     <Compile Include="Lamp.cs" />
     <Compile Include="Enum\ModeOfSustemWorkFridge.cs" />

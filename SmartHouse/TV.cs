@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmartHouse
 {
-    public class TV : Device, IStatusOnOff
+    public class TV : Device, IVolume, IChangeChanel
     { 
         private int channel;
         private int volume;
@@ -13,7 +13,7 @@ namespace SmartHouse
         public TV(string name)
         {
             Name = name;
-            State = false;
+          //  State = false;
         }
         public int Chanel
         {
@@ -78,15 +78,15 @@ namespace SmartHouse
         {
             Volume -= 10;
         }
-        public void StatusOn()
+     /*   public void StatusOn()
         {
             State = true;
         }
         public void StatusOff()
         {
             State = false;
-        }
-        public override string Information()
+        }*/
+        public override string ToString()
         {
             string state;
             if (State)
